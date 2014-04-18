@@ -1,49 +1,301 @@
-// # SHORT HOWTO
-// ## Sprites
-//     .whatever
-//          +sized-sprite($icons, coderiver) //or
-// 			+s(codedby) //gets default value for spritemap as $icons
-// ### animation example
-//     +include keyframes(rotate)
-//        from
-//           +rotate(0)
-//        to
-//           +rotate(360)
-// ## animation usage
-//     body:hover
-// 	    +animation(rotate 200s linear infinite)
-// ## animations easing, see easings.net for full list and examples, tnx @ai
-//     transition: all 1.2s ceaser($ease-in)
-// ## gradient example
-//     +background-image(linear-gradient(#232323, #5c5c5c));
-//     +g(#232323, #5c5c5c);
-//	   horizontal
-//     +gh(#232323, #5c5c5c);
-// ## making bw-images
-//     img
-//			@extend %gray
-// ## predefined media-queries: https://github.com/paranoida/sass-mediaqueries
-//     +min-screen(320)
-//			display: none
-// +max-screen(1000), +iphone5, +iphone4, +ipad-retina, +ipad, +hdpi - also available
-//
-// ## use cycles
-//     @for $i from 1 through 3
-//       .item-#{$i}
-//			width: 2em * $i;
-//     @each $s in a,b,c
-// 	    	#{$s}
-//				display: none
-// ## fonts 
-// Save fonts to /css/fonts, after that write (eot, woff, ttf):
-// +font(book, cytiapro-black-webfont)  
-// =book
-// 	font-family: "book",arial,sans-serif 
+@font-face
+	font-family: 'helveticaneuecyr-light'
+	src: url('../fonts/helveticaneuecyr-light.eot')
+	src: local('__'), url('../fonts/helveticaneuecyr-light.woff') format('woff'), url('../fonts/helveticaneuecyr-light.ttf') format('ttf')
+	font-weight: normal
+	font-style: normal
+
+@font-face
+	font-family: 'helveticaneuecyr-thin'
+	src: url('../fonts/helveticaneuecyr-light.eot')
+	src: local('__'), url('../fonts/helveticaneuecyr-thin.woff') format('woff'), url('../fonts/helveticaneuecyr-thin.ttf') format('ttf')
+	font-weight: normal
+	font-style: normal
 	
+@font-face
+	font-family: 'helveticaneuecyr-roman'
+	src: url('../fonts/helveticaneuecyr-roman.eot')
+	src: local('__'), url('../fonts/helveticaneuecyr-roman.woff') format('woff'), url('../fonts/helveticaneuecyr-roman.ttf') format('ttf')
+	font-weight: normal
+	font-style: normal
+
+@font-face
+	font-family: 'helveticaneue-roman'
+	src: url('../fonts/helveticaneue-roman.eot')
+	src: local('__'), url('../fonts/helveticaneue-roman.ttf') format('ttf'), url('../fonts/helveticaneue-roman.svg') format('svg')
+	font-weight: normal
+	font-style: normal
+
+@font-face
+	font-family: 'didotltspro-roman'
+	src: url('../fonts/didotltspro-romanp2.eot')
+	src: local('__'), url('../fonts/didotltspro-romanp2.woff') format('woff'), url('../fonts/didotltspro-romanp2.ttf') format('ttf')
+	font-weight: normal
+	font-style: normal
+
+@font-face
+	font-family: 'didotltspro-bold'
+	src: url('../fonts/didotltspro-boldp2.eot')
+	src: local('__'), url('../fonts/didotltspro-boldp2.woff') format('woff'), url('../fonts/didotltspro-boldp2.ttf') format('ttf')
+	font-weight: normal
+	font-style: normal
+	
+@font-face
+	font-family: 'didotltspro-italic'
+	src: url('../fonts/didotltspro-italicp2.eot')
+	src: local('__'), url('../fonts/didotltspro-italicp2.woff') format('woff'), url('../fonts/didotltspro-italicp2.ttf') format('ttf')
+	font-weight: normal
+	font-style: normal
+
+@font-face
+	font-family: 'helveticaneuecyr-medium'
+	src: url('../fonts/helveticaneuecyr-medium.eot')
+	src: local('__'), url('../fonts/helveticaneuecyr-medium.woff') format('woff'), url('../fonts/helveticaneuecyr-medium.ttf') format('ttf')
+	font-weight: normal
+	font-style: normal
+	
+@font-face
+	font-family: 'bodoni-bol-italic'
+	src: url('../fonts/bodonianttdembol_italic.eot')
+	src: local('__'), url('../fonts/bodonianttdembol_italic.woff') format('woff'), url('../fonts/bodonianttdembol_italic.ttf') format('ttf')
+	font-weight: normal
+	font-style: normal
+	
+=hlc
+	font-family: 'helveticaneuecyr-light', Arial, sans-serif
+
+=hrc
+	font-family: 'helveticaneuecyr-roman', Arial, sans-serif
+
+=htc
+	font-family: 'helveticaneuecyr-thin', Arial, sans-serif
+	
+=hmc
+	font-family: 'helveticaneuecyr-medium', Arial, sans-serif
+
+=hr
+	font-family: 'helveticaneue-roman', Arial, sans-serif
+
+=db
+	font-family: 'didotltspro-bold', Arial, sans-serif
+
+=dr
+	font-family: 'didotltspro-roman', Arial, sans-serif
+
+=di
+	font-family: 'didotltspro-italic', Arial, sans-serif
+	
+=bbi
+	font-family: 'bodoni-bol-italic', Arial, sans-serif
+
+
 body
 	font-size: 12px 
 	font-family: Arial, sans-serif 
 	line-height: 1.4
+	+hrc
 
 
-// common blocks      
+// common blocks  
+
+.out
+	position: relative
+	+clr
+
+.t1
+	font-size: 30px
+	text-transform: uppercase
+	+db	
+
+.t2
+	font-size: 20px
+	+hlc
+
+// wrapper 
+.wrapper  
+	margin: 0 auto
+	width: 945px
+
+.header
+	padding: 30px 0
+	height: 180px
+	line-height: 1
+	text-transform: uppercase
+	font-size: 64.85px
+	background: #2C3E77  
+	+box
+	+db
+
+.header__top
+	padding-left: 100px
+	color: #FFF 
+
+.header__bottom
+	padding-left: 204px
+	color: #FFF14C 
+
+//img
+.img
+	display: block
+
+// btn
+.btn
+	padding: 17px 20px 17px 45px
+	color: #FFF 
+	cursor: pointer
+	display: inline-block
+	&:hover
+		background: #9A358B 
+
+.btn_red
+	position: relative
+	font-size: 30.42px 
+	text-transform: uppercase
+	background-color: #99358b
+	+box-shadow(0 1px 8px rgba(187,18,18,.44))
+	+background-image(linear-gradient(bottom, #d71515 0%, #f92f39 100%))
+	+hlc
+	&:before
+		position: absolute
+		content: ""
+		top: -30px
+		left: -66px
+		z-index: -1
+		+s(btn-bef) 
+
+.btn__pink
+	padding: 10px 20px 
+	font-size: 15px
+	background-color: #99358b
+	+box-shadow(0 1px 8px rgba(216,21,127,.44))
+	+background-image(linear-gradient(bottom, #d7157f 0%, #f92d9b 100%))
+	+hmc
+
+.btn__blue
+	padding: 12px 50px
+	font-size: 15px
+	background-color: #99358b
+	+background-image(linear-gradient(bottom, #2b3d77 0%, #3a519d 100%))
+	+hmc
+//footer
+.footer
+	padding: 7px 0 8px 
+	height: 51px
+	background: #EDEDED 
+	+box
+
+.copyright
+	float: left
+	margin-top: 12px
+	+hr
+
+.footer__right
+	float: right
+	
+.footer__logo
+	display: inline-block
+	+s(logo)
+
+.soc
+	margin: 10px 0 0 100px
+	display: inline-block
+	vertical-align: top
+	li
+		position: relative
+		margin-left: 15px
+		width: 10px
+		min-height: 14px 
+		display: inline-block
+		+clr
+		a
+			position: absolute
+			top: 0
+			display: inline-block
+		.soc__vk
+			top: 2px
+			+s(vk)
+		.soc__od
+			+s(od)
+		.soc__f
+			+s(f)
+		.soc__mail
+			top: 2px
+			+s(mail)
+
+.overlay
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	z-index: 99
+	cursor: pointer
+	background: rgba(#fff, .8) 
+	
+.popap
+	position: absolute
+	top: 112px
+	left: 50%
+	margin-left: -222.5px
+	padding: 38px 50px 46px 
+	width: 445px
+	text-align: center
+	z-index: 100
+	border: 10px solid rgba(216,21,127,.6)
+	background-color: #fff
+	+hlc
+	+box
+	.popap__close
+		position: absolute
+		top: 16px
+		right: 16px
+		cursor: pointer
+		+s(popap-pic)
+	.btn
+		margin: 15px 0 0
+	.btn__blue
+		margin: 0
+	p
+		padding-top: 20px
+		font-size: 13px
+		a
+			color: #D8157F
+			text-decoration: none
+			&:hover
+				text-decoration: underline
+
+.popap__title
+	padding-bottom: 20px
+	color: #2C3E77
+	font-size: 24px
+	text-transform: uppercase
+
+.popap__title_pb
+	padding-bottom: 10px
+
+.popap__inf
+	font-size: 15px
+	+hrc
+
+.popap__form
+	margin: 30px auto
+	width: 289px
+	text-align: left
+	p
+		padding: 0
+		color: #D8157F
+	a
+		color: #D8157F 
+		&:hover
+			text-decoration: none
+	p, a, span
+		font-style: italic
+	
+.input
+	margin: 5px 0 
+	padding: 0 10px
+	width: 100%
+	height: 33px
+	background-color: #f5f5f5
+	+box-shadow(inset 0 1px 3px rgba(0,1,1,.15))
+	+box

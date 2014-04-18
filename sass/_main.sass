@@ -1,2 +1,131 @@
-// Normally mainpage styles
- 
+.l-col1
+	.btn_red
+		margin: 0 auto
+		display: block
+
+.l_botb
+	background: url('../img/bor-pic.png') repeat-x 0 100% 
+
+.l-col1_bot + .l-col2
+	p
+		padding: 5px 0
+	.t2
+		padding: 28px 0 10px 
+
+// .prize
+// 	margin-top: 25px
+// 	text-align: center
+// 	+box
+// .prize__n
+// 	padding: 0 5px 0 40px
+// 	line-height: 0.95
+// 	color: #D8157F
+// 	font-size: 92.03px
+// 	font-weight: 700 
+// 	vertical-align: top
+// 	+bbi
+	  
+// .prize__text
+// 	color: #90214F 
+// 	line-height: 1
+// 	text-align: left
+// 	font-size: 33.09px
+// 	text-transform: uppercase
+// 	display: inline-block
+// 	+db
+// 	span
+// 		text-transform: none
+		
+.stage
+	padding: 0 24px 26px
+	width: 431px
+	border: 1px solid #fff
+	background-color: #fff
+	+box-shadow(0 0 8px rgba(0,0,0,.13))
+	+box
+
+.stage__row
+	padding-top: 32px
+	+clr
+.stage__number
+	float: left
+	font-size: 71.11px 
+	line-height: 0.95
+	color: #D8157F
+	display: inline-block
+	+db
+
+.stage__conditions
+	float: left 
+	padding-left: 10px 
+	width: 324px
+	p
+		padding-left: 10px
+	a
+		color: #D8157F 
+		&
+	.btn__pink
+		margin: 38px 0 25px
+		
+.stage__title
+	padding-bottom: 12px 
+	font-size: 17px
+	color: #2C3E77 
+	text-transform: uppercase
+
+.stage__exception
+	color: #585858 
+	letter-spacing: 0
+
+.stage__links
+	position: relative
+	margin: 16px 22px 0 0
+	padding-left: 36px
+	color: #000 
+	font-size: 14px
+	text-decoration: underline
+	display: inline-block
+	+hmc
+	&:hover 
+		text-decoration: none
+	&:before
+		position: absolute
+		content: ""
+		top: -5px
+		left: 0
+		+s(l-pic) 
+
+.soc-like
+	margin: 22px 0
+	li
+		vertical-align: bottom
+		cursor: pointer
+		display: inline-block
+	.f-l
+		+s(f-l)
+	.vk-l
+		+s(vk-l)
+	.od-l
+		+s(od-l)
+
+.luck
+	position: relative
+	margin: 38px 0 65px 
+	padding-left: 110px
+	font-size: 18px 
+	&:before
+		position: absolute
+		content: ''
+		top: -10px
+		left: -40px
+		+s(luck-pic)
+
+	a
+		color: #D8157F
+		font-weight: bold
+		text-transform: uppercase
+		&:hover
+			text-decoration: none
+	p
+		line-height: 1
+		+di
