@@ -44,6 +44,12 @@
 	+box-shadow(0 0 8px rgba(0,0,0,.13))
 	+box
 
+.stage_reg
+	padding: 0
+
+.stage__col
+	padding: 24px 55px 
+
 .stage__row
 	padding-top: 32px
 	+clr
@@ -73,13 +79,17 @@
 	color: #2C3E77 
 	text-transform: uppercase
 
+.stage__title_black
+	padding-top: 26px
+	color: #000 
+
 .stage__exception
 	color: #585858 
 	letter-spacing: 0
 
 .stage__links
 	position: relative
-	margin: 16px 22px 0 0
+	margin: 16px 20px 0 0
 	padding-left: 36px
 	color: #000 
 	font-size: 14px
@@ -129,3 +139,59 @@
 	p
 		line-height: 1
 		+di
+
+.stage__user
+	padding: 15px 0 10px
+	font-size: 20px
+	font-style: italic
+	+dr
+
+.stage__user + p
+	font-size: 14px
+	
+.stage__cod
+	margin: 0 0 0 -1px 
+	padding-top: 10px
+	width: 100.5%
+	height: 64px
+	text-align: center
+	font-size: 0
+	background: #fff14c 
+	+box
+	li
+		height: 44px
+		width: 44px
+		font-size: 39px
+		font-weight: bold
+		border-left: 1px solid #EBEBEB 
+		background: #fff 
+		display: inline-block
+		+bbi
+		&:first-child
+			border: none 
+.state__number
+	margin: 12px 0 40px
+	text-align: center
+	i
+		display: inline-block
+		+s(n-pic)
+	input
+		margin-left: 38px
+		padding: 0 10px 
+		width: 84px
+		height: 32px
+		font-size: 14px
+		border: 1px solid #e7e7e7
+		vertical-align: top
+		background-color: #fff
+		display: inline-block
+		+border-radius(5px)
+		+background-clip(padding-box)
+		+box
+		+placeholder-color(#c3c3c3)
+		&:focus
+			+placeholder
+				font-size: 0
+				
+.stage__block
+	padding: 44px 17px 27px 
