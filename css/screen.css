@@ -69,7 +69,7 @@ body { font-size: 13px; font-family: Arial, sans-serif; line-height: 1.4; font-f
 
 .btn__blue_mod { margin: 0 auto; padding: 10px 34px; display: block; -webkit-box-shadow: 0 1px 8px rgba(44, 62, 119, 0.44); -moz-box-shadow: 0 1px 8px rgba(44, 62, 119, 0.44); box-shadow: 0 1px 8px rgba(44, 62, 119, 0.44); }
 
-.btn_sin { background-color: #e32129; -webkit-box-shadow: 0 1px 8px rgba(44, 62, 119, 0.44); -moz-box-shadow: 0 1px 8px rgba(44, 62, 119, 0.44); box-shadow: 0 1px 8px rgba(44, 62, 119, 0.44); background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #2b3d77), color-stop(100%, #3a519d)); background-image: -webkit-linear-gradient(bottom, #2b3d77 0%, #3a519d 100%); background-image: -moz-linear-gradient(bottom, #2b3d77 0%, #3a519d 100%); background-image: -o-linear-gradient(bottom, #2b3d77 0%, #3a519d 100%); background-image: linear-gradient(bottom, #2b3d77 0%, #3a519d 100%); height: 30px; line-height: 30px; font-size: 14px; padding: 0 27px; color: white; }
+.btn_sin { background-color: #e32129; -webkit-box-shadow: 0 1px 8px rgba(44, 62, 119, 0.44); -moz-box-shadow: 0 1px 8px rgba(44, 62, 119, 0.44); box-shadow: 0 1px 8px rgba(44, 62, 119, 0.44); background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #2b3d77), color-stop(100%, #3a519d)); background-image: -webkit-linear-gradient(bottom, #2b3d77 0%, #3a519d 100%); background-image: -moz-linear-gradient(bottom, #2b3d77 0%, #3a519d 100%); background-image: -o-linear-gradient(bottom, #2b3d77 0%, #3a519d 100%); background-image: linear-gradient(bottom, #2b3d77 0%, #3a519d 100%); height: 36px; line-height: 36px; font-size: 14px; padding: 0 27px; color: white; }
 
 .footer { padding: 7px 0 8px; height: 51px; background: #ededed; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
@@ -199,3 +199,10 @@ body { font-size: 13px; font-family: Arial, sans-serif; line-height: 1.4; font-f
 .error input:focus::placeholder { font-size: 0; }
 
 .stage__block { padding: 44px 17px 27px; }
+
+.rules { padding: 28px 0; font-size: 12px; color: #444444; }
+.rules p { margin-bottom: 1em; }
+.rules h2 { text-transform: uppercase; font-size: 18px; color: #2d4075; margin-bottom: 21px; font-weight: normal; }
+.rules h3 { font-size: 15px; font-weight: bold; font-family: "helveticaneuecyr-light", Arial, sans-serif; color: #787878; margin-bottom: 10px; }
+.rules ul { list-style-type: disc; margin: 10px 0 10px 20px; }
+.rules p + h3 { margin-top: 20px; }
