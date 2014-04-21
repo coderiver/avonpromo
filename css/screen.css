@@ -58,6 +58,7 @@ body { font-size: 13px; font-family: Arial, sans-serif; line-height: 1.4; font-f
 
 .btn { padding: 17px 20px 17px 45px; color: white; cursor: pointer; display: inline-block; }
 .btn:hover { background: #9a358b; }
+.btn:active { position: relative; top: 2px; }
 
 .btn_red { position: relative; font-size: 30.42px; text-transform: uppercase; background-color: #99358b; -webkit-box-shadow: 0 1px 8px rgba(187, 18, 18, 0.44); -moz-box-shadow: 0 1px 8px rgba(187, 18, 18, 0.44); box-shadow: 0 1px 8px rgba(187, 18, 18, 0.44); background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #d71515), color-stop(100%, #f92f39)); background-image: -webkit-linear-gradient(bottom, #d71515 0%, #f92f39 100%); background-image: -moz-linear-gradient(bottom, #d71515 0%, #f92f39 100%); background-image: -o-linear-gradient(bottom, #d71515 0%, #f92f39 100%); background-image: linear-gradient(bottom, #d71515 0%, #f92f39 100%); font-family: "helveticaneuecyr-light", Arial, sans-serif; }
 .btn_red:before { position: absolute; content: ""; top: -30px; left: -66px; z-index: -1; background: url('../img/icons-s00a51b337f.png') 0 0 no-repeat; width: 468px; height: 135px; }
