@@ -37,7 +37,7 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
 @font-face { font-family: "bodoni-bol-italic"; src: url("../fonts/bodonianttdembol_italic.eot"); src: local("__"), url("../fonts/bodonianttdembol_italic.woff") format("woff"), url("../fonts/bodonianttdembol_italic.ttf") format("ttf"); font-weight: normal; font-style: normal; }
 
-body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; font-family: "helveticaneuecyr-roman", Arial, sans-serif; }
+body { font-size: 13px; font-family: Arial, sans-serif; line-height: 1.4; font-family: "helveticaneuecyr-roman", Arial, sans-serif; }
 
 .out { position: relative; *zoom: 1; }
 .out:after { content: " "; display: table; clear: both; }
@@ -137,9 +137,9 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; font-f
 .stage__conditions { float: left; padding-left: 10px; width: 324px; }
 .stage__conditions p { padding-left: 10px; }
 .stage__conditions a { color: #d8157f; }
-.stage__conditions .btn__pink { margin: 38px 0 25px; }
+.stage__conditions .btn__pink { margin: 25px 0; }
 
-.stage__title { padding-bottom: 12px; font-size: 17px; color: #2c3e77; text-transform: uppercase; }
+.stage__title { padding-bottom: 9px; font-size: 17px; color: #2c3e77; text-transform: uppercase; }
 
 .stage__title_black { padding-top: 26px; color: black; }
 
@@ -164,6 +164,10 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; font-f
 .stage__user { padding: 15px 0 10px; font-size: 20px; font-style: italic; font-family: "didotltspro-roman", Arial, sans-serif; }
 
 .stage__user + p { font-size: 14px; }
+
+.code { *zoom: 1; background: #fff14c; padding: 10px 0 10px 38px; }
+.code:after { content: " "; display: table; clear: both; }
+.code input { outline: none; font-family: "bodoni-bol-italic", Arial, sans-serif; font-size: 37px; border: none; background: white; border: none; border-right: 1px solid #ececec; float: left; width: 43px; margin: 0px; padding: 0px; text-align: center; height: 47px; line-height: 47px; }
 
 .stage__cod { margin: 0 0 0 -1px; padding-top: 10px; width: 100.5%; height: 64px; text-align: center; font-size: 0; background: #fff14c; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .stage__cod li { height: 44px; width: 44px; font-size: 39px; font-weight: bold; border-left: 1px solid #ebebeb; background: white; display: inline-block; font-family: "bodoni-bol-italic", Arial, sans-serif; }
