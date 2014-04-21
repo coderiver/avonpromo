@@ -46,6 +46,30 @@
 
 .stage_reg
 	padding: 0
+	position: relative
+	.stage__message
+		background: rgba(#fff,.9)
+		z-index: 20 
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		padding: 188px 25px 10px 25px
+		text-align: center
+		font-size: 14px 
+		line-height: 1.5 
+		p
+			margin-bottom: 1em 
+			strong
+				+hmc
+	.stage__morelink
+		font-size: 18px 
+		color: #D61F7F 
+		i
+			display: inline-block
+			+s(stagemore)
+			margin-right: 14px 
 
 .stage__col
 	padding: 24px 55px 
