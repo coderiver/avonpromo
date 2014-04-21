@@ -4,4 +4,15 @@ $(document).ready(function() {
 				$(this).next('input').focus();
 			}
 		});
+
+	$('.codeform').submit(function(event) {
+		if($('.input-code').val()==''){
+			$(this).addClass('is-error')
+			return false;
+		}
+		else{
+			$(this).removeClass('is-error')
+		}
+		
+	});
 });

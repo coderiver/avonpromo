@@ -59,14 +59,17 @@
 					<li>5</li>
 					<li>3</li>
 				</ul> -->
+				<form class="codeform" action="/">
 				<div class="stage__col">
 					<p>Введите в поле ниже код с картинки.</p>
 					<div class="state__number">
-						<i></i>
-						<input type="text" placeholder="код">
+						<i><img src="img/icons/n-pic.png" alt=""></i>
+						<input type="text" placeholder="код" class="input-code">
 					</div>
-					<button class="btn btn__blue btn__blue_mod">Зарегистрировать</button>
+					<span class="error">Ви не ввели код с малюнка для перевiрки</span>
+					<button class="btn btn__blue btn__blue_mod js-checkform">Зарегистрировать</button>
 				</div>
+				</form>
 				<div class="stage__block">
 				<a href="#" class="stage__links">Подробные условия акции</a>
 				<a href="#" class="stage__links">Вопрос-ответ</a>
