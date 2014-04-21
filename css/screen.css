@@ -208,11 +208,14 @@ body { font-size: 13px; font-family: Arial, sans-serif; line-height: 1.4; font-f
 .rules p + h3 { margin-top: 20px; }
 
 .win { padding: 30px 20px 10px 24px; }
-.win .win__title { font-family: "didotltspro-roman", Arial, sans-serif; font-size: 20px; font-weight: normal; color: black; margin-bottom: 10px; }
+.win .win__title { font-family: "didotltspro-roman", Arial, sans-serif; font-size: 20px; font-weight: normal; color: black; margin-bottom: 10px; font-style: italic; }
+.win .win__title span { font-size: 15px; display: block; font-style: normal; font-family: "helveticaneuecyr-roman", Arial, sans-serif; }
+.win .win__title strong { font-family: "helveticaneuecyr-medium", Arial, sans-serif; display: block; font-weight: bold; }
 .win .win__check { text-align: center; }
 .win a { color: #d61f7f; }
 .win p { margin-bottom: 1em; }
+.win strong { font-family: "helveticaneuecyr-medium", Arial, sans-serif; }
 
-.prize .prize__title { color: #d61f7f; font-size: 17px; margin-bottom: 10px; font-family: "helveticaneuecyr-medium", Arial, sans-serif; }
+.prize .prize__title { color: #d61f7f; font-size: 17px; margin-bottom: 10px; font-weight: normal; }
 .prize .prize__img { text-align: center; margin: 10px 0; }
 .prize .prize__note { font-size: 11px; padding-top: 10px; margin-top: 12px; border-top: 1px solid #cacaca; margin-bottom: 14px; }
