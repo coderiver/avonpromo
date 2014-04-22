@@ -284,6 +284,32 @@ body
 			&:hover
 				text-decoration: underline
 
+.btn__text
+	position: relative
+	margin-left: -12px
+	margin-right: 45px
+	padding-left: 24px
+	font-size: 16px
+	color: #D8157F
+	text-decoration: none
+	+hmc 
+	&:before
+		position: absolute
+		content: ""
+		left: 0
+		top: 2px
+		+s(bt-pic) 
+	&:hover
+		text-decoration: underline
+
+.btn__text_mod
+	padding-right: 10px
+	vertical-align: top
+	&:before
+		top: 5px
+		left: 100%
+		+rotate(180)
+
 .popap__title
 	padding-bottom: 20px
 	color: #2C3E77
