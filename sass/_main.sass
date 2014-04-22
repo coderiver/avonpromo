@@ -47,6 +47,7 @@
 	padding: 0
 	position: relative
 	.stage__message
+		background-color: #FFF 
 		background: rgba(#fff,.9)
 		z-index: 20 
 		position: absolute
@@ -92,7 +93,6 @@
 		padding-left: 10px
 	a
 		color: #D8157F 
-		&
 	.btn__pink
 		margin: 25px 0
 		
@@ -133,10 +133,11 @@
 
 .soc-like
 	margin: 22px 0
-	li
-		vertical-align: bottom
+	+clr
+	li 
 		cursor: pointer
-		display: inline-block
+		display: block
+		float: left
 	.f-l
 		+s(f-l)
 	.vk-l
