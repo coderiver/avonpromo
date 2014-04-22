@@ -156,6 +156,7 @@ body { font-size: 13px; font-family: Arial, sans-serif; line-height: 1.4; font-f
 .stage__links { position: relative; margin: 16px 20px 0 0; padding-left: 36px; color: black; font-size: 14px; text-decoration: underline; display: inline-block; font-family: "helveticaneuecyr-medium", Arial, sans-serif; }
 .stage__links:hover { text-decoration: none; }
 .stage__links:before { position: absolute; content: ""; top: -5px; left: 0; background: url('../img/icons-s95bbc06a8c.png') 0 -611px no-repeat; width: 29px; height: 29px; }
+.stage__links.stage__links_back:before { -webkit-transform: rotate(180deg); -moz-transform: rotate(180deg); -ms-transform: rotate(180deg); -o-transform: rotate(180deg); transform: rotate(180deg); }
 
 .soc-like { margin: 22px 0; }
 .soc-like li { vertical-align: bottom; cursor: pointer; display: inline-block; }
@@ -219,6 +220,13 @@ body { font-size: 13px; font-family: Arial, sans-serif; line-height: 1.4; font-f
 .prize .prize__title { color: #d61f7f; font-size: 17px; margin-bottom: 10px; font-weight: normal; }
 .prize .prize__img { text-align: center; margin: 10px 0; }
 .prize .prize__note { font-size: 11px; padding-top: 10px; margin-top: 12px; border-top: 1px solid #cacaca; margin-bottom: 14px; }
+
+.stage__button { text-align: center; margin: 15px 0; }
+
+.hello { margin-bottom: 50px; font-size: 14px; padding-top: 30px; }
+.hello span { display: block; color: #24284d; text-transform: uppercase; font-weight: normal; margin-bottom: 4px; font-size: 18px; }
+.hello em { font-family: "didotltspro-roman", Arial, sans-serif; display: block; font-size: 20px; }
+.hello p { margin-top: 12px; }
 
 .overlay { position: fixed; }
 
