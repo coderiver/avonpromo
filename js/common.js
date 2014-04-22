@@ -16,6 +16,14 @@ $(document).ready(function() {
 		
 	});
 
+	$('.faq__all dt').click(function(event) {
+		$(this).parent().toggleClass('is-active')
+	});
+	$('.faq__close').click(function(event) {
+		$('.overlay,.faq').hide();
+	});
+
+
 
 	$(document).click(function() {
 		$(".js-select-list").hide();
@@ -56,5 +64,5 @@ $(document).ready(function() {
 	$('.js-select').click(function(event){
 	event.stopPropagation();
 	}); 
-	
+
 });

@@ -2,7 +2,6 @@
 	.btn_red
 		margin: 0 auto
 		display: block
-
 .l_botb
 	background: url('../img/bor-pic.png') repeat-x 0 100% 
 
@@ -128,6 +127,9 @@
 		top: -5px
 		left: 0
 		+s(l-pic) 
+	&.stage__links_back
+		&:before
+			+transform(rotate(180deg))
 
 .soc-like
 	margin: 22px 0
@@ -370,7 +372,7 @@ input[type="checkbox"]
 
 .btn__blue_w
 	margin-right: -16px
-	padding: 9px 50px 
+	padding: 9px 0 
 	height: 36px
 	width: 180px
 
