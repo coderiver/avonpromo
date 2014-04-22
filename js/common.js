@@ -15,4 +15,10 @@ $(document).ready(function() {
 		}
 		
 	});
+	$('.faq__all dt').click(function(event) {
+		$(this).parent().toggleClass('is-active')
+	});
+	$('.faq__close').click(function(event) {
+		$('.overlay,.faq').hide();
+	});
 });
