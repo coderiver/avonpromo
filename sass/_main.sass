@@ -179,7 +179,7 @@
 .code
 	+clr
 	background: #FFF14C
-	padding: 10px 0 10px 38px  
+	padding: 10px 0 10px 56px  
 	input
 		outline: none
 		+bbi
@@ -194,7 +194,14 @@
 		padding: 0px
 		text-align: center
 		height: 47px
-		line-height: 47px
+		line-height: 45px
+		+placeholder-color(#000)
+		+placeholder
+			font-weight: 700 
+			+bbi
+		&:focus
+			+placeholder
+			font-size: 0
 
 .stage__cod
 	margin: 0 0 0 -1px 
