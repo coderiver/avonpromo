@@ -65,4 +65,13 @@ $(document).ready(function() {
 	event.stopPropagation();
 	}); 
 
+	$(function(){
+	  $('.scrollblock').jScrollPane(
+		{
+			enableKeyboardNavigation: false, // запрет управления с клавиатуры
+			hideFocus: true // скрывает outline при фокусе
+			}
+		);
+	}); 
+
 });
