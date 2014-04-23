@@ -118,6 +118,9 @@ body { font-size: 13px; font-family: Arial, sans-serif; line-height: 1.4; font-f
 
 .input { margin: 5px 0; padding: 0 10px; width: 100%; height: 33px; background-color: whitesmoke; -webkit-box-shadow: inset 0 1px 3px rgba(0, 1, 1, 0.15); -moz-box-shadow: inset 0 1px 3px rgba(0, 1, 1, 0.15); box-shadow: inset 0 1px 3px rgba(0, 1, 1, 0.15); -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .input:focus { outline: none; }
+.input.is-error { border: 1px solid #cc0000; color: #cc0000; }
+
+.input__error { display: block; font-size: 11px; color: #cc0000; margin-top: 0px; }
 
 .exit-button { text-align: center; padding: 14px 0; }
 .exit-button .btn { padding-left: 50px; padding-right: 50px; }
@@ -137,6 +140,7 @@ body { font-size: 13px; font-family: Arial, sans-serif; line-height: 1.4; font-f
 .l-col1_bot + .l-col2 .t2 { padding: 28px 0 10px; }
 
 .stage { padding: 0 24px 26px; width: 431px; border: 1px solid white; background-color: white; -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.13); -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.13); box-shadow: 0 0 8px rgba(0, 0, 0, 0.13); -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.lteie8 .stage { border: 2px solid #cccccc; }
 
 .stage_reg { padding: 0; position: relative; }
 .stage_reg .stage__message { background-color: white; background: rgba(255, 255, 255, 0.9); z-index: 20; position: absolute; top: 0; left: 0; right: 0; bottom: 0; padding: 188px 25px 10px 25px; text-align: center; font-size: 14px; line-height: 1.5; }
