@@ -74,4 +74,30 @@ $(document).ready(function() {
 		);
 	}); 
 
+	 $(function() {
+			var availableTags = [
+			"Москва",
+			"Санкт-Петербург",
+			"Волгоград",
+			"Новосибирск",
+			"Екатеринбург",
+			"Нижний Новгород",
+			"Казань",
+			"Самара",
+			"Омск"
+			];
+		$( "#tags" ).autocomplete({
+		source: availableTags
+		});
+	});
+
+	 $('.js-goto2').click(function(){
+	 	$('#popup2').hide();
+	 	$('#popup1').show();
+	 })
+	 $('.js-goto1').click(function(){
+	 	$('#popup1').hide();
+	 	$('#popup2').show();
+	 })
+	 
 });
