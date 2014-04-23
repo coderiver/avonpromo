@@ -188,14 +188,13 @@ body { font-size: 13px; font-family: Arial, sans-serif; line-height: 1.4; font-f
 .code { *zoom: 1; background: #fff14c; padding: 10px 0 10px 56px; }
 .code:after { content: " "; display: table; clear: both; }
 .code input { outline: none; font-family: "bodoni-bol-italic", Arial, sans-serif; font-size: 37px; border: none; background: white; border: none; border-right: 1px solid #ececec; float: left; width: 43px; margin: 0px; padding: 0px; text-align: center; height: 47px; line-height: 45px; }
-.code input:-moz-placeholder, .code input::-moz-placeholder { color: black; opacity: 1; }
-.code input::-webkit-input-placeholder { color: black; }
+.code input:-moz-placeholder, .code input::-moz-placeholder { color: #cccccc; opacity: 1; }
+.code input::-webkit-input-placeholder { color: #cccccc; }
 .code input:-ms-input-placeholder { font-weight: 700; font-family: "bodoni-bol-italic", Arial, sans-serif; }
 .code input:-moz-placeholder { font-weight: 700; font-family: "bodoni-bol-italic", Arial, sans-serif; }
 .code input::-moz-placeholder { font-weight: 700; font-family: "bodoni-bol-italic", Arial, sans-serif; }
 .code input::-webkit-input-placeholder { font-weight: 700; font-family: "bodoni-bol-italic", Arial, sans-serif; }
 .code input::placeholder { font-weight: 700; font-family: "bodoni-bol-italic", Arial, sans-serif; }
-.code input:focus { font-size: 0; }
 
 .stage__cod { margin: 0 0 0 -1px; padding-top: 10px; width: 100.5%; height: 64px; text-align: center; font-size: 0; background: #fff14c; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .stage__cod li { height: 44px; width: 44px; font-size: 39px; font-weight: bold; border-left: 1px solid #ebebeb; background: white; display: inline-block; font-family: "bodoni-bol-italic", Arial, sans-serif; }
