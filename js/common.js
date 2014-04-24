@@ -65,31 +65,18 @@ $(document).ready(function() {
 	event.stopPropagation();
 	}); 
 
-	$(function(){
-	  $('.scrollblock').jScrollPane(
+	
+	  $('.scrollblock,.js-select-list').jScrollPane(
 		{
-			enableKeyboardNavigation: false, // запрет управления с клавиатуры
-			hideFocus: true // скрывает outline при фокусе
+			hideFocus: true, 
+			showArrows: true
 			}
 		);
-	}); 
 
-	 $(function() {
-			var availableTags = [
-			"Москва",
-			"Санкт-Петербург",
-			"Волгоград",
-			"Новосибирск",
-			"Екатеринбург",
-			"Нижний Новгород",
-			"Казань",
-			"Самара",
-			"Омск"
-			];
-		$( "#tags" ).autocomplete({
-		source: availableTags
-		});
-	});
+
+	
+	
+
 
 	 $('.js-goto2').click(function(){
 	 	$('#popup2').hide();
@@ -99,5 +86,20 @@ $(document).ready(function() {
 	 	$('#popup1').hide();
 	 	$('#popup2').show();
 	 })
+
+	 var availableTags = [
+		"Москва",
+		"Санкт-Петербург",
+		"Волгоград",
+		"Новосибирск",
+		"Екатеринбург",
+		"Нижний Новгород",
+		"Казань",
+		"Самара",
+		"Омск"
+		];
+	$( "#tags" ).autocomplete({
+	source: availableTags
+	});
 	 
 });

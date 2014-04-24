@@ -93,8 +93,8 @@
 
 .jspVerticalBar
 	position: absolute
-	padding: 4px 0
-	top: 8px
+	padding: 0px 0
+	top: 0px
 	right: 0
 	width: 11px
 	height: 100%
@@ -137,10 +137,7 @@
 	border-radius: 2px
 	-moz-border-radius: 2px
 	-webkit-border-radius: 2px
-	transition: all linear .2s
-	-moz-transition: all linear .2s
-	-webkit-transition: all linear .2s
-	-o-transition: all linear .2s
+
 
 .jspDrag:hover 
 	background: rgba(0,0,0,0.6)
@@ -156,13 +153,15 @@
 	text-indent: -20000px
 	display: block
 	cursor: pointer
+	background: transparent
 
 .jspArrow.jspDisabled
 	cursor: default
 	background: #80808d
+	background: transparent 
 
 .jspVerticalBar .jspArrow
-	height: 16px
+	height: 5px
 
 .jspHorizontalBar .jspArrow
 	width: 16px
