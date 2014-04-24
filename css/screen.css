@@ -87,9 +87,9 @@ body { font-size: 13px; font-family: Arial, sans-serif; line-height: 1.4; font-f
 .soc li .soc__f { background: url('../img/icons-scb886fccc6.png') 0 -868px no-repeat; width: 12px; height: 18px; }
 .soc li .soc__mail { top: 2px; background: url('../img/icons-scb886fccc6.png') 0 -820px no-repeat; width: 20px; height: 14px; }
 
-.overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 99; cursor: pointer; background: white; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80); opacity: 0.8; background: rgba(255, 255, 255, 0.8); }
+.overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 99; cursor: pointer; background: white; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80); opacity: 0.8; background: rgba(255, 255, 255, 0.8); }
 
-.popap { position: absolute; top: 112px; left: 50%; margin-left: -222.5px; padding: 38px 50px 46px; width: 445px; text-align: center; z-index: 100; border: 10px solid #da2185; border: 10px solid rgba(216, 21, 127, 0.6); background-color: white; font-family: "helveticaneuecyr-light", Arial, sans-serif; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.popap { position: fixed; top: 112px; left: 50%; margin-left: -222.5px; padding: 38px 50px 46px; width: 445px; text-align: center; z-index: 100; border: 10px solid #da2185; border: 10px solid rgba(216, 21, 127, 0.6); background-color: white; font-family: "helveticaneuecyr-light", Arial, sans-serif; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .popap .popap__close { position: absolute; top: 16px; right: 16px; cursor: pointer; background: url('../img/icons-scb886fccc6.png') 0 -946px no-repeat; width: 18px; height: 18px; }
 .popap .btn { margin: 15px 0 0; }
 .popap .btn__blue { margin: 0; }
