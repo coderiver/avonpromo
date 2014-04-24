@@ -318,7 +318,7 @@ input[type="checkbox"]:checked + span { background: url('../img/icons-scb886fccc
 
 .overlay { position: fixed; }
 
-.faq { position: absolute; top: 50%; left: 50%; padding: 28px 14px 28px 28px; width: 849px; height: 362px; background-color: #2c3e77; border: 11px solid #abb2c9; border: 11px solid rgba(44, 62, 119, 0.4); margin-top: -209px; margin-left: -452px; background: white; z-index: 1000; }
+.faq { position: fixed; top: 50%; left: 50%; padding: 28px 14px 28px 28px; width: 849px; height: 362px; background-color: #2c3e77; border: 11px solid #abb2c9; border: 11px solid rgba(44, 62, 119, 0.4); margin-top: -209px; margin-left: -452px; background: white; z-index: 1000; }
 .faq .faq__close { position: absolute; top: 16px; right: 16px; background: url('../img/icons-scb886fccc6.png') 0 -510px no-repeat; width: 13px; height: 13px; cursor: pointer; }
 .faq .faq__data { display: inline-block; margin-right: 40px; font-size: 14px; color: #787878; margin-bottom: 24px; }
 .faq .faq__data strong { font-weight: normal; font-size: 20px; color: #333333; }
