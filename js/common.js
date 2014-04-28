@@ -24,7 +24,7 @@ $(document).ready(function() {
 	});
 
 
-
+	$('.js-select-list').hide();
 	$(document).click(function() {
 		$(".js-select-list").hide();
 		$(".js-select").removeClass("is-active");
@@ -36,24 +36,25 @@ $(document).ready(function() {
 		var text = select_list.find("li").first().text();
 			$(this).find(".js-select-text").text(text);
 			$(this).click(function(event){
-			if ($(this).hasClass("is-active")) {
-			$(this).removeClass("is-active");
-			select_list.slideUp("fast");
-		}
-		else {
-			$(".js-select").removeClass("is-active");
-			$(".js-select-list").hide();
-			select_list.slideDown("fast");
-			$(this).addClass("is-active");
-			}
-		event.stopPropagation();
+
+				if ($(this).hasClass("is-active")) {
+					$(this).removeClass("is-active");
+					select_list.hide();
+				}
+				else {
+					$(".js-select").removeClass("is-active");
+					$(".js-select-list").hide();
+					select_list.show();
+					$(this).addClass("is-active");
+				}
+				event.stopPropagation();
 		});
 	select_list.find("li").click(function(event) {
 		var id = $(this).attr("data-id");
 		var text = $(this).text();
 			$(this).parent().parent().find(".js-select-text").text(text);
 			$(this).parent().parent().find(".js-select-input").val(id);
-			$(this).parent().hide();
+			$(this).parents('.js-select-list').hide();
 			$(this).parents(".js-select").removeClass("is-active");
 			event.stopPropagation();
 			});
